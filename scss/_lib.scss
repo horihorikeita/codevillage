@@ -1,0 +1,65 @@
+//////////////////////
+////    変数    //////
+//////////////////////
+$gray: #707070;
+$beige: #A1938689;
+$ofwhite: #A193861F;
+//////////////////////
+////    mixin     ////
+//////////////////////
+
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 560px) {
+    @content;
+  }
+}
+ 
+@mixin hair {
+  font-family: "ヒラギノ明朝 Pro";
+  font-size: 3.8rem;
+}
+
+//////////////////////
+////    共通    /////
+//////////////////////
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.67;
+}
+.concept, .menu, .access {
+  padding:290px  0 70px;
+  @include tab {
+    padding: 60px 0 70px;
+  }
+}
+.wrap {
+width: 85%;
+margin: 0 auto;
+}
+.title {
+  color: $gray;
+  font-size: 1.8rem;
+  &:after {
+    display: inline-block;
+    content: "";
+    background-color: $gray;
+    border-top: $gray 1px solid;
+    height: 1px;
+    width: 90px;
+    margin-left: 30px;
+    margin-bottom: 0.6rem;
+  }
+}

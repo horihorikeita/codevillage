@@ -1,0 +1,63 @@
+.eyecatch{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  &-title {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    @include tab {
+      width: 100%;
+      background-image: url(../img/component.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+      
+    }
+  }
+  &-img {
+    background-image: url(../img/component.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 55%;
+    @include tab {
+      display: none;
+    }
+  }
+}
+.title-wrap {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  @include tab {
+    flex-direction: column-reverse;
+    color: #fff;
+    height: 150px;
+  }
+  &-ja {
+    font-family: "ヒラギノ明朝 Pro";
+    font-size: 3.8rem;
+    @include sp {
+      font-size: 2.3rem;
+    }
+  }
+  &-en {
+    font-family: "Zapfino",;
+    transform: translate(-5%, 0);
+    font-size: 3.8rem;
+    @include sp {
+      font-size: 2.8rem;
+      transform: none;
+    }
+
+  }
+}

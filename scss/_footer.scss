@@ -1,0 +1,57 @@
+footer {
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+    @include tab {
+      flex-direction: column;
+    }
+  p {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: $gray;
+  }
+}
+  button {
+    font-size: 1.8rem;
+    color: gray;
+    padding: 10px 40px;
+    background-color: #fff;
+    width: 185px;
+    height: 40px;
+    @include tab {
+      order:-1;
+      margin: 60px auto;
+      
+    }
+  }
+  .footer-txt-icon {
+    display: flex;
+    @include tab {
+      justify-content: space-between;
+    }
+  }
+
+.border {
+  content: "";
+  width: 100%;
+  border-top: $gray 1px solid;
+  margin-top: 165px;
+  @include tab {
+    margin-top: 65px;
+  }
+}
+.icon {
+  font-size: 3.2rem;
+  color: black;
+  &-box {
+    transform: translate(0%,20%);
+    margin-left:20px;
+  }
+}
