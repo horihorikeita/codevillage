@@ -1,6 +1,6 @@
-.concept {
+#concept {
   background:linear-gradient(180deg,$ofwhite 0%,$ofwhite 40%,$beige 40%,$beige 100%);
-  &-img-box {
+  .concept-img-box {
     display:flex;
     height: 414px;
     justify-content: space-between;

@@ -10,18 +10,27 @@
 <body>
   <header>
     <h1 class="header-logo">SALON BEPPU</h1>
-    <div class="ham">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="target">
+        <span class="terget_inner_line target_inner_line1" id="line1"></span>
+        <span class="terget_inner_line target_inner_line2" id="line2"></span>
+        <span class="terget_inner_line target_inner_line3" id="line3"></span>
       </div>
 
-    <nav>
+    <nav class="nav1">
       <ul>
-        <li>MENU</li>
-        <li>CONCEPT</li>
-        <li>ACCESS</li>
-        <li>RESERVE</li>
+        <li><a href="#menu">MENU</a> </li>
+        <li><a href="#concept">CONCEPT</a></li>
+        <li><a href="#access">ACCESS</a></li>
+        <li><a href="#reserve">RESERVE</a></li>
+      </ul>
+    </nav>
+    
+    <nav class="nav2" id="nav_f">
+      <ul>
+        <li><a href="#menu" class="list">MENU</a> </li>
+        <li><a href="#concept" class="list">CONCEPT</a></li>
+        <li><a href="#access" class="list">ACCESS</a></li>
+        <li><a href="#reserve" class="list">RESERVE</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +44,7 @@
         </div>
         <div class="eyecatch-img"></div>
       </div>
-    <section class="concept">
+    <section id="concept">
       <div class="wrap">
       <h2 class="title">CONCEPT</h2>
       <div class="concept-img-box">
@@ -51,7 +60,7 @@
 
       </div>
     </section>
-    <section class="menu">
+    <section id="menu">
       <div class="wrap">
         <h2 class="title">MENU</h2>
         <div class="menu-wrap">
@@ -84,7 +93,7 @@
       </div>
 
     </section>
-    <section class="access">
+    <section id="access">
       <h2 class="title">ACCESS</h2>
 
       <div class="access-box">
@@ -106,7 +115,7 @@
 
     </section>
   </main>
-  <footer>
+  <footer id="reserve">
     <div class="wrap">
       <div class="border"></div>
       <div class="footer-box">
@@ -124,5 +133,6 @@
 
   </footer>
   
+  <script src="main.js"></script>
 </body>
 </html>
