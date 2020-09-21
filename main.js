@@ -1,22 +1,17 @@
-'use strict' 
-{
-function hamburger() {
-  document.getElementById('line1').classList.toggle('linea');
-  document.getElementById('line2').classList.toggle('lineb');
-  document.getElementById('line3').classList.toggle('linec');
-  document.getElementById('target').classList.toggle('sidedex');
-  document.getElementById('nav_f').classList.toggle('fadein');
-}
+function toggleNav() {
+  let body = document.body;
+  let hamburger = document.getElementById("js-target");
+  let blackBg = document.getElementById("js-black-bg");
+  let list = document.getElementById("list");
 
-document.getElementById('target').addEventListener('click', function(){
-  hamburger();
-});
-
-let list = document.getElementsByClassName('list');
-
-for(let i = 0; i < list.length; i++) {
-  list[i].addEventListener('click',function () {
-    hamburger();
+  hamburger.addEventListener("click", function () {
+    body.classList.toggle("nav-open");
+  });
+  blackBg.addEventListener("click", function () {
+    body.classList.remove("nav-open");
+  });
+  list.addEventListener("click", function () {
+    body.classList.remove("nav-open");
   });
 }
-}
+toggleNav();

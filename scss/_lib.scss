@@ -2,8 +2,8 @@
 ////    変数    //////
 //////////////////////
 $gray: #707070;
-$beige: #A1938689;
-$ofwhite: #A193861F;
+$beige: #a1938689;
+$ofwhite: #a193861f;
 //////////////////////
 ////    mixin     ////
 //////////////////////
@@ -23,7 +23,7 @@ $ofwhite: #A193861F;
     @content;
   }
 }
- 
+
 @mixin hair {
   font-family: "ヒラギノ明朝 Pro";
   font-size: 3.8rem;
@@ -39,19 +39,22 @@ html {
 body {
   line-height: 1.67;
 }
-.concept, .menu, .access {
-  padding:290px  0 70px;
+#concept,
+#menu,
+#access {
+  padding: 290px 0 70px;
   @include tab {
     padding: 60px 0 70px;
   }
 }
 .wrap {
-width: 85%;
-margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 .title {
   color: $gray;
   font-size: 1.8rem;
+
   &:after {
     display: inline-block;
     content: "";

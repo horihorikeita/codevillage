@@ -1,4 +1,4 @@
-.menu-wrap{
+.menu-wrap {
   display: flex;
   justify-content: space-between;
   @include tab {
@@ -17,13 +17,12 @@
   }
 }
 .menu-content {
-  height: 300px;
   text-align: center;
   font-family: "Roboto Mono for Powerline";
   @include tab {
     text-align: left;
+    margin-bottom: 60px;
   }
-  
 }
 .menu-name {
   font-size: 3rem;
